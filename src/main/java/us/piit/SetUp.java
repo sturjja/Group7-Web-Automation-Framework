@@ -53,7 +53,7 @@ public class SetUp {
     @BeforeMethod
     public void setUp(@Optional("false") String useCloudEnv, @Optional("browserstack") String envName, @Optional("windows") String os,
                       @Optional("10") String osVersion, @Optional("chrome") String browserName, @Optional("110") String browserVersion,
-                      @Optional("https://www.google.com") String url) throws MalformedURLException {
+                      @Optional("https://automation.scaledupit.com") String url) throws MalformedURLException {
         if (useCloudEnv.equalsIgnoreCase("true")){
             getCloudDriver(envName,os,osVersion,browserName,browserVersion,"samiurturjja_uXPSKT","DcRHG1dHNfvnD4deAqPT");
         } else if(useCloudEnv.equalsIgnoreCase("false")){
